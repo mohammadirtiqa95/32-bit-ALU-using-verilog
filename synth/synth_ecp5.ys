@@ -1,0 +1,5 @@
+# Lattice ECP5 FPGA synthesis (Yosys). Run from the project root.
+read_verilog rtl/adder32.v rtl/barrel_shifter32.v rtl/alu32.v
+hierarchy -check -top alu32
+synth_ecp5 -top alu32 -json synth/out/alu32_ecp5.json
+tee -o synth/reports/ecp5_stat.txt stat

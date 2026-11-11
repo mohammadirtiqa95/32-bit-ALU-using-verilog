@@ -1,0 +1,8 @@
+# Generic gate-level synthesis of the ALU (Yosys). Run from the project root.
+read_verilog rtl/adder32.v rtl/barrel_shifter32.v rtl/alu32.v
+hierarchy -check -top alu32
+synth -top alu32 -flatten
+abc -g AND,NAND,OR,NOR,XOR,XNOR
+opt_clean
+tee -o synth/reports/generic_stat.txt stat
+write_verilog -noattr synth/out/alu32_netlist.v
