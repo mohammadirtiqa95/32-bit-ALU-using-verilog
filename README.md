@@ -5,7 +5,7 @@ A combinational 32-bit ALU with 16 operations and four status flags (Zero, Negat
 |                  |                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------- |
 | **Submitted by** | Mohammad Irtiqa Bhat (2024-25MECECS005)<br>Mohammad Abbas (2025MECECS002)               |
-| **Submitted to** | [Supervisor name]                                                                       |
+| **Submitted to** | [DR afshan Amin]                                                                       |
 | **Department**   | Department of Electronics and Communication Engineering, National Institute of Technology Srinagar |
 
 ![ALU block diagram](docs/figures/alu_block_diagram.png)
